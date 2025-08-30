@@ -119,7 +119,7 @@
 				snacks = with pkgs; [ dwt1-shell-color-scripts ];
         git = with pkgs; [ lazygit ];
         lua = with pkgs; [ lua-language-server stylua lua ];
-        nix = with pkgs; [ nix-doc nixd ];
+        nix = with pkgs; [ nix-doc nixd nixfmt ];
         c = with pkgs; [
 					clang-tools
 					clang
