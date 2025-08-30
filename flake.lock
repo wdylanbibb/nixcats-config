@@ -1,0 +1,98 @@
+{
+  "nodes": {
+    "nixCats": {
+      "locked": {
+        "lastModified": 1755491370,
+        "narHash": "sha256-i1sI9zxcygXP7ExtjqEz06jAobk9FWiYgbeimwn5Owc=",
+        "owner": "BirdeeHub",
+        "repo": "nixCats-nvim",
+        "rev": "a526813d8026d7a2a8a40a5d89eb76cf89d63169",
+        "type": "github"
+      },
+      "original": {
+        "owner": "BirdeeHub",
+        "repo": "nixCats-nvim",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1755268003,
+        "narHash": "sha256-nNaeJjo861wFR0tjHDyCnHs1rbRtrMgxAKMoig9Sj/w=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "32f313e49e42f715491e1ea7b306a87c16fe0388",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixpkgs-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "plugins-nvim-recorder": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1755842173,
+        "narHash": "sha256-vvSEzgpWNjO9U8GN6LTEvRmTz5QJ372a0XzEWguR1s4=",
+        "owner": "chrisgrieser",
+        "repo": "nvim-recorder",
+        "rev": "7afb227a097ff6a427f69822b96143af14d2f5ef",
+        "type": "github"
+      },
+      "original": {
+        "owner": "chrisgrieser",
+        "repo": "nvim-recorder",
+        "type": "github"
+      }
+    },
+    "plugins-zellij-vim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1736208000,
+        "narHash": "sha256-R4BYJNYwg4IpP06UcMN7ZbxbpiF711scuOZKBCDYwcs=",
+        "owner": "fresh2dev",
+        "repo": "zellij.vim",
+        "rev": "6b80425dc93963a65aef7e9518deaa4dadf6865e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "fresh2dev",
+        "repo": "zellij.vim",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "nixCats": "nixCats",
+        "nixpkgs": "nixpkgs",
+        "plugins-nvim-recorder": "plugins-nvim-recorder",
+        "plugins-zellij-vim": "plugins-zellij-vim",
+        "rust-overlay": "rust-overlay"
+      }
+    },
+    "rust-overlay": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1756003222,
+        "narHash": "sha256-lmEMhIIbjt8Wp1EYbNqCojuU9ygyDFv8Tu0X1k8qIMc=",
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "rev": "88ceedecde53e809b4bf8b5fd10d181889d9bac7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
