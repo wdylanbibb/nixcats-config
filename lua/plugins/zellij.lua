@@ -38,6 +38,10 @@ return {
 			vim.keymap.set("n", "<leader>zS", "<cmd>ZellijNewPaneSplit<CR>", { desc = "Open ZelliJ pane below" })
 
 			vim.keymap.set("n", "<leader>zt", "<cmd>ZellijNewTab<CR>", { desc = "Open ZelliJ tab" })
+
+			vim.keymap.set("n", "<leader>zf", function()
+				os.execute("zellij action toggle-fullscreen")
+			end, { desc = "Toggle pane fullscreen" })
 		end,
 	},
 }
