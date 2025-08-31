@@ -95,4 +95,14 @@ return {
 			vim.opt.fillchars:append({ diff = "╱" })
 		end,
 	},
+	{
+		"vim-fugitive",
+		for_cat = "git",
+		event = "DeferredUIEnter",
+	},
+	{
+		"vim-rhubarb",
+		for_cat = "git",
+		event = "DeferredUIEnter",
+	},
 }
