@@ -43,7 +43,12 @@ require("lze").load({
 		for_cat = "general",
 		event = "DeferredUIEnter",
 		after = function(_)
-			require("better_escape").setup()
+			require("better_escape").setup({
+				mappings = {
+					i = { j = { j = false } },
+					c = { j = { j = false } },
+				},
+			})
 		end,
 	},
 	{
@@ -450,4 +455,5 @@ require("lze").load({
 	require("plugins.debug"),
 	require("plugins.colorscheme"),
 	require("plugins.zellij"),
+	require("plugins.jujutsu"),
 })
