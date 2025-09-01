@@ -18,7 +18,7 @@ return {
 			if nixCats("c") then
 				require("lint").linters.clangtidy.args = {
 					"--quiet",
-					"-checks=bugprone-*,clang-analyzer-core.*,misc-*,modernize-*",
+					"-checks=bugprone-*",
 				}
 			end
 
