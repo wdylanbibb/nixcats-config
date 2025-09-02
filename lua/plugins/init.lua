@@ -47,6 +47,8 @@ require("lze").load({
 				mappings = {
 					i = { j = { j = false } },
 					c = { j = { j = false } },
+					v = { j = { k = false } },
+					t = { j = { k = false } },
 				},
 			})
 		end,
