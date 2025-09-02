@@ -44,12 +44,14 @@ if nixCats("zellij") then
 	-- Credit to https://github.com/fresh2dev/zellij-autolock/issues/11#issuecomment-2575922784
 	vim.api.nvim_create_autocmd({ "FocusGained", "BufEnter" }, {
 		callback = function()
+			require("notify")("Locked")
 			zellij("locked")
 		end,
 	})
 
 	vim.api.nvim_create_autocmd({ "FocusLost", "VimLeave" }, {
 		callback = function()
+			require("notify")("Normal")
 			zellij("normal")
 		end,
 	})
