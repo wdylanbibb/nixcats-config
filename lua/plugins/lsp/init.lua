@@ -197,4 +197,11 @@ return {
 			on_attach = require("plugins.lsp.on_attach"),
 		},
 	},
+	{
+		"ocamllsp",
+		enabled = nixCats("ocaml") or false,
+		lsp = {
+			filetypes = { "ocaml" },
+		},
+	},
 }

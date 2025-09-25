@@ -163,6 +163,10 @@
               rust-analyzer
               vscode-extensions.vadimcn.vscode-lldb.adapter
             ];
+            ocaml = with pkgs; [
+              ocaml
+              ocamlPackages.ocaml-lsp
+            ];
           };
 
           # This is for plugins that will load at startup without using packadd:
@@ -347,6 +351,7 @@
               lua = true;
               c = true;
               rust = true;
+              ocaml = true;
 
               lspDebugMode = false;
               test = true;
