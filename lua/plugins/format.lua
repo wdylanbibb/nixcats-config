@@ -15,6 +15,7 @@ return {
 					nix = { "nixfmt" },
 					c = { "clang-format" },
 					rust = { "rustfmt" },
+					ocaml = { "ocamlformat" },
 				},
 				format_on_save = {
 					timeout_ms = 500,
