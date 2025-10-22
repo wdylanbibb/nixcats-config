@@ -184,6 +184,7 @@
               which-key-nvim
               nvim-notify
               lush-nvim
+              tint-nvim
             ];
             zellij = [ pkgs.neovimPlugins.zellij-vim ];
             rust = with pkgs.vimPlugins; [ rustaceanvim ];

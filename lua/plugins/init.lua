@@ -448,6 +448,14 @@ require("lze").load({
 		end,
 		dep_of = { "lualine.nvim" },
 	},
+	{
+		"tint.nvim",
+		for_cat = "general",
+		event = "VimEnter",
+		after = function(_)
+			require("tint").setup()
+		end,
+	},
 	require("plugins.snacks"),
 	require("plugins.git"),
 	require("plugins.completion"),
