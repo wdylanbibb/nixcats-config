@@ -46,6 +46,11 @@ return {
 					},
 				},
 			},
+			toggle = {
+				enabled = true,
+				which_key = true,
+			},
+			zen = { enabled = true },
 		})
 	end,
 }

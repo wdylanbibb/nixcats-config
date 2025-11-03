@@ -456,6 +456,11 @@ require("lze").load({
 			require("tint").setup()
 		end,
 	},
+	{
+		"nvim-parinfer",
+		for_cat = "lisp",
+		event = "VimEnter",
+	},
 	require("plugins.snacks"),
 	require("plugins.git"),
 	require("plugins.completion"),

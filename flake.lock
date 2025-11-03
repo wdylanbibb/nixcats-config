@@ -31,6 +31,22 @@
         "type": "github"
       }
     },
+    "plugins-nvim-parinfer": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1759325281,
+        "narHash": "sha256-hzm+VF669NpILT6P540PriXDuOCjPq3D7YKxLv5EsQU=",
+        "owner": "gpanders",
+        "repo": "nvim-parinfer",
+        "rev": "3968e669d9f02589aa311d33cb475b16b27c5fbb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "gpanders",
+        "repo": "nvim-parinfer",
+        "type": "github"
+      }
+    },
     "plugins-nvim-recorder": {
       "flake": false,
       "locked": {
@@ -67,6 +83,7 @@
       "inputs": {
         "nixCats": "nixCats",
         "nixpkgs": "nixpkgs",
+        "plugins-nvim-parinfer": "plugins-nvim-parinfer",
         "plugins-nvim-recorder": "plugins-nvim-recorder",
         "plugins-zellij-vim": "plugins-zellij-vim",
         "rust-overlay": "rust-overlay"

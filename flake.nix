@@ -55,6 +55,12 @@
       url = "github:chrisgrieser/nvim-recorder";
       flake = false;
     };
+
+    # Lisp syntax helper
+    plugins-nvim-parinfer = {
+      url = "github:gpanders/nvim-parinfer";
+      flake = false;
+    };
   };
 
   # see :help nixCats.flake.outputs
@@ -264,6 +270,7 @@
               clangd_extensions-nvim
             ];
             rust = with pkgs.vimPlugins; [ lsp_lines-nvim ];
+            lisp = with pkgs.neovimPlugins; [ nvim-parinfer ];
           };
 
           # shared libraries to be added to LD_LIBRARY_PATH
@@ -354,6 +361,7 @@
               c = true;
               rust = true;
               ocaml = true;
+              lisp = true;
 
               lspDebugMode = false;
               test = true;

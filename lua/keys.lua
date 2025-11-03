@@ -29,5 +29,16 @@ vim.keymap.set("n", "<leader>bd", function()
 	end
 end, { desc = "[D]elete current buffer" })
 
+vim.keymap.set("n", "<leader>-", "<C-W>s", { desc = "Split Window Below", remap = true })
+vim.keymap.set("n", "<leader>|", "<C-W>v", { desc = "Split Window Right", remap = true })
+if nixCats("snacks") then
+	vim.keymap.set("n", "<leader>wm", function()
+		Snacks.toggle.zoom()
+	end, { desc = "Toggle Zoom Mode" })
+	vim.keymap.set("n", "<leader>uz", function()
+		Snacks.toggle.zen()
+	end, { desc = "Toggle Zen Mode", remap = true })
+end
+
 -- See installed plugins
 vim.keymap.set("n", "<leader>n", "<cmd>NixCats pawsible<CR>", { desc = "See Installed Plugins" })
