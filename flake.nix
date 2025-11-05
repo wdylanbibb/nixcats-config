@@ -232,6 +232,7 @@
               dropbar-nvim
 
               pkgs.neovimPlugins.nvim-recorder
+              nvim-colorizer-lua
             ];
             git = with pkgs.vimPlugins; [
               vim-fugitive

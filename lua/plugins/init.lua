@@ -449,6 +449,14 @@ require("lze").load({
 		dep_of = { "lualine.nvim" },
 	},
 	{
+		"nvim-colorizer.lua",
+		for_cat = "general",
+		event = "VimEnter",
+		after = function(_)
+			require("colorizer").setup()
+		end,
+	},
+	{
 		"tint.nvim",
 		for_cat = "general",
 		event = "VimEnter",
