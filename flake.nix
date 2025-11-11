@@ -171,7 +171,7 @@
             ];
             ocaml = with pkgs; [
               ocaml
-              dune
+              dune_3
               gcc
               ocamlPackages.ocaml-lsp
               ocamlPackages.ocamlformat
