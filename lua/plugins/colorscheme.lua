@@ -23,23 +23,12 @@ if nixCats("colorscheme") == "tokyonight" then
 		"tokyonight.nvim",
 		for_cat = "themer",
 		after = function(plugin)
-			-- vim.o.background = "dark"
-			--
-			-- local black = "#000000"
-			-- require("tokyonight").setup({
-			-- 	style = "night",
-			-- 	transparent = true,
-			--
-			-- 	plugins = {
-			-- 		all = true,
-			-- 	},
-			--
-			-- 	on_colors = function(c)
-			-- 		-- local black = "#000000"
-			-- 		c.bg_float = black
-			-- 		c.bg_popup = black
-			-- 	end,
-			-- })
+			require("tokyonight").setup({
+				style = "night",
+				plugins = {
+					all = true,
+				},
+			})
 		end,
 	})
 end
